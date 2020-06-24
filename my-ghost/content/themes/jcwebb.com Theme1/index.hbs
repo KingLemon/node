@@ -1,0 +1,16 @@
+<header style="background-color:aquamarine;">
+    <h1>{{ @blog.title}}</h1>
+    <h2>{{ @blog.description }}</h2>
+</header>
+
+<main>
+
+<!--for each one of the posts, display the title -->
+{{#foreach posts}}
+    <h1> <a href={{url}}> {{title}} </a></h1>
+{{/foreach}}
+
+</main>
+
+<!-- Pagination block -->
+{{pagination}}
